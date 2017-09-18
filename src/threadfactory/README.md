@@ -13,8 +13,8 @@
 		
 #Points to be remember
 	
-	*Java provides an interface, the ThreadFactory interface to implement a Thread object factory. 
-	*The ThreadFactory interface has only one method called **newThread**. 
-	*It receives a	Runnable object as a parameter and returns a Thread object. 
-	*When you implement a ThreadFactory interface, you have to implement that interface and override this method.
-	*Most basic ThreadFactory, has only one line.
+	1. Java provides an interface, the ThreadFactory interface to implement a Thread object factory. 
+	2. The ThreadFactory interface has only one method called **newThread**. 
+	3. It receives a	Runnable object as a parameter and returns a Thread object. 
+	4. When you implement a ThreadFactory interface, you have to implement that interface and override this method.
+	5. Most basic ThreadFactory, has only one line.
