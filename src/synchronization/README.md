@@ -13,12 +13,3 @@ The solution for these problems comes with the concept of critical section. A cr
 	every method declared with the synchronized keyword is a critical section and Java only allows the execution of one of the critical sections of an object.
 
 	
-
-		
-#Points to be remember
-	
-	1. Java provides an interface, the ThreadFactory interface to implement a Thread object factory. 
-	2. The ThreadFactory interface has only one method called **newThread**. 
-	3. It receives a	Runnable object as a parameter and returns a Thread object. 
-	4. When you implement a ThreadFactory interface, you have to implement that interface and override this method.
-	5. Most basic ThreadFactory, has only one line.
