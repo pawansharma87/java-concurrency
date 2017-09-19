@@ -18,3 +18,9 @@
 #Points With thread local example
 	
 	Thread-local variables store a value of an attribute for each Thread that uses one of these variables. You can read the value using the get() method and change the value using the set() method. The first time you access the value of a thread-local variable, if it has no value for the Thread object that it is calling, the thread-local variable calls the initialValue() method to assign a value for that Thread and returns the initial value.
+
+	private static ThreadLocal<Date> startDate = new ThreadLocal<Date>() {
+		protected Date initialValue() {
+			return new Date();
+		}
+	};
