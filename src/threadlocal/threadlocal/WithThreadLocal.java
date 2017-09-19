@@ -1,9 +1,10 @@
-package local;
+package threadlocal.threadlocal;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class UnsafeTask implements Runnable {
+public class WithThreadLocal implements Runnable {
+	
 	private static ThreadLocal<Date> startDate = new ThreadLocal<Date>() {
 		protected Date initialValue() {
 			return new Date();
@@ -12,15 +13,12 @@ public class UnsafeTask implements Runnable {
 
 	@Override
 	public void run() {
-		// startDate = new Date();
-		System.out.printf("Starting Thread: %s : %s\n", Thread.currentThread()
-				.getId(), startDate.get());
+		System.out.printf("Starting Thread: %s : %s\n", Thread.currentThread().getId(), startDate.get());
 		try {
 			TimeUnit.SECONDS.sleep((int) Math.rint(Math.random() * 10));
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		System.out.printf("Thread Finished: %s : %s\n", Thread.currentThread()
-				.getId(), startDate.get());
+		System.out.printf("Thread Finished: %s : %s\n", Thread.currentThread().getId(), startDate.get());
 	}
 }
