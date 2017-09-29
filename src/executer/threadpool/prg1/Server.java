@@ -1,4 +1,4 @@
-package executers;
+package executer.threadpool.prg1;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;

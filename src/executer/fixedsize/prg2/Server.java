@@ -1,4 +1,4 @@
-package fixsize.executer;
+package executer.fixedsize.prg2;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;

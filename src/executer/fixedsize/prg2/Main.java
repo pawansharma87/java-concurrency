@@ -1,4 +1,4 @@
-package fixsize.executer;
+package executer.fixedsize.prg2;
 
 public class Main {
 
